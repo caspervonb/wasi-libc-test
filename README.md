@@ -1,4 +1,4 @@
-# WebAssembly System Interface tests for libc
+# wasi-libc-test
 
 This repository contains tests written in C for libc.
 
