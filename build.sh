@@ -5,5 +5,7 @@ wasm_cc="/opt/wasi-sdk/bin/clang"
 
 for input in *.c; do
   echo "Compiling $input"
-  $wasm_cc -o "$(basename $input .c).wasm" "$input"
+
+  output="$(basename $input .c).wasm"
+  $wasm_cc -o "$output" "$input"
 done
