@@ -8,7 +8,7 @@ status=0
 for input in *.wasm; do
   echo "Testing $input..."
   tools/wasm-test $1 $input || status=1
-  git clean -fx
 done
 
+git clean -fx
 exit $status
